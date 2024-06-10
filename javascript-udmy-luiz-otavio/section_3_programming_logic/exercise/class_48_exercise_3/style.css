@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body {
+    min-height: 672px;
+    background-image: linear-gradient(to bottom,#593122, #BF755A);
+}
+
+main {
+    background-color: #F2C0A2;
+    width: 625px;
+    margin: 100px auto;
+    border-radius: 15px;
+}
+
+div {
+    padding: 5px;
+    box-shadow: 5px 5px 15px #593122;
+}
+
+p {
+    /* text-align: center; */
+    padding: 0px 20px;
+    font-size: 2.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

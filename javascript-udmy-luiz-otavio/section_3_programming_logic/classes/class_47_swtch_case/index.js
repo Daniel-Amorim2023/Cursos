@@ -79,4 +79,4 @@ function getDayOfWeek (day) {
 }
 
 getDayOfWeek (daysOfWeek);
-console.log("Situação 3")
+console.log("Situação 3")                                                                                                                                                                                   
