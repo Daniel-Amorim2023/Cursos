@@ -77,7 +77,7 @@ function zeroOfTheLeft (num) {
 function main() {
     message = document.querySelector("#hours p");
     const dateHour = new Date();
-    message.innerHTML = `<strong>${getDays()}</strong>, ${dateHour.getDate()} de ${getMonths()} de ${dateHour.getFullYear()}, ${zeroOfTheLeft(dateHour.getHours())}:${zeroOfTheLeft(dateHour.getMinutes())}.`;
+    message.innerHTML = `<strong>${getDays()}</strong>, ${dateHour.getDate()} de ${getMonths()} de ${dateHour.getFullYear()} ${zeroOfTheLeft(dateHour.getHours())}:${zeroOfTheLeft(dateHour.getMinutes())}.`;
 }
 
 // function main() {
