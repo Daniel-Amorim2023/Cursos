@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 255, 0.633), rgba(49, 9, 226, 0.823));
+    height: 670px;
+
+}
+
+section {
+    background-image: linear-gradient(to bottom, rgba(235, 232, 232, 0.951),rgba(255, 255, 255, 0.884), rgba(255, 255, 255, 0.884), rgba(255, 255, 255, 0.884));
+    height: 400px;
+    width: 600px;
+    margin: 50px auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(255, 166, 0, 0.399);
+}
+
+h1 {
+    text-align: center;
+}
