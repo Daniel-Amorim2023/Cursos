@@ -17,4 +17,22 @@ section {
 
 h1 {
     text-align: center;
+    font-size: 2em;
 }
+
+#timer {
+    font-size: 4em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+p {
+    text-align: center;
+   
+}
+
+.pausing {
+    color: red;
+}
+
+
