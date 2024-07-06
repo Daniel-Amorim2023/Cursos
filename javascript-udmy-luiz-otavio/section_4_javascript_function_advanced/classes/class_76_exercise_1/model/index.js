@@ -5,7 +5,7 @@ function creteCalculator () {
 
         start() {
             this.clickButtons();
-            this.squeezeEnter();
+            this.touchEnter();
         },
 
         clearCharacter () {
@@ -33,7 +33,7 @@ function creteCalculator () {
             }
         },
 
-        squeezeEnter () {
+        touchEnter () {
             this.display.addEventListener('keypress', e => {
                 if (e.keyCode === 13) {
                     this.executeAccount();
