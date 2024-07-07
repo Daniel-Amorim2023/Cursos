@@ -6,4 +6,9 @@
     }
 
     speakshi()
-})('Daniel')
+})('Daniel');
+
+let arow;
+( arow = (nome) => {
+    console.log('Hi! ' + nome + '!');
+})('Karina');
