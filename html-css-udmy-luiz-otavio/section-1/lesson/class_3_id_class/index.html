@@ -4,9 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My html</title>
+    <style>
+        /* {} -> is selector */
+        h1 {
+            background-color: red;
+        }
+
+        h1 {
+            background-color: blue;
+        }
+        /* Same specificity prevails in the last statement */
+
+        p {
+            background-color: red;
+            color: rgb(0, 254, 0);
+        }
+
+        #first-id {
+            background-color: purple;
+        }
+
+        .background-red {
+            background: yellow /*!important -> this command is not recommended*/; 
+
+            /* The specificity of the id is stronger than that of the class */
+        }
+
+        .bold {
+            color: white;
+        }
+
+
+    </style>
 </head>
 <body>
-    <h1 id="first-id">Comes here</h1>
+    <h1 id="first-id" class="background-red left-border">Comes here</h1>
     <!-- id is element identifiction  -->
+    <h1 id="second-id" class="background-red">Comes here</h1>
+
+    <p><b class="bold">Any</b> text</p>
+    <p><b class="bold">Any</b> text</p>
+    <p><b class="bold">Any</b> text</p>
+    <p><b class="bold">Any</b> text</p>
+    <p><b class="bold">Any</b> text</p>
 </body>
 </html>
