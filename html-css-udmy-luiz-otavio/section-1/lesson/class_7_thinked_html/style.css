@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.top {
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/8728e059-7686-4d2d-a67a-84872bd71025/7d183fa1-28af-4208-a99f-fd2881757b59/BR-pt-20240708-POP_SIGNUP_TWO_WEEKS-perspective_WEB_c610c849-c94c-4c10-9958-e90644b53632_small.jpg");
+    background-size: cover;
+    
+}
+
+#heading {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.682));
+    display: flex;
+    justify-content: space-between;
+}
+
+.h1 {
+    padding: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+
+.h2 {
+    text-transform: none;
+}
+
+#heading a {
+    color: rgb(229, 9, 20);
+    text-decoration-line: none;
+    font-family:  Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 2em;
+
+}
+
+.background {
+    height:  640px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.241), rgba(0, 0, 0, 0.514));
+}
+
+#background-2 {
+    width: 500px;
+    margin: 150px;
+    background-color: aliceblue;
+}
