@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms 2</title>
+    <style>
+        form div label {
+            display: block;
+        }
+
+        form label {
+            cursor: pointer;
+        }
+
+        optgroup option {
+            margin: 2px 0 -9px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <div>
+            <p>My forms</p>
+            <p>
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" class="names" placeholder="Your name" required>
+                <!-- there are anothers attributes as value="", disabled, readonly -->
+            </p><p>
+                <label for="surname">Surname: </label>
+                <input type="text" id="surname" name="surname" class="names" placeholder="Your surname" required>
+            
+                <!-- <label for="surname">
+                    Surname:
+                    <input type="text" id="surname" name="surname" class="names" placeholder="Your surname">
+                 </label> -->
+            </p>
+        </div>
+        <p>
+            <label for="dev-1">I'm dev 1.</label>
+            <input type="checkbox" id="dev-1" value="dev-1"><br>
+            <!-- There another attributes as checked -->
+
+            <label for="dev-2">I'm dev 2.</label>
+            <input type="checkbox" id="dev-2" value="dev-2"><br>
+
+            <label for="dev-3">I'm dev 3.</label>
+            <input type="checkbox" id="dev-3" value="dev-3">
+        </p>
+        <p>
+            <label for="feminine">feminine</label>
+            <input type="radio" id="feminine" name="gender" value="feminine"><br>
+
+            <label for="masculine">masculine</label>
+            <input type="radio" id="masculine" name="gender" value="masculine"><br>
+
+            <label for="neutral">neutral</label>
+            <input type="radio" id="neutral" name="gender" value="neutral"><br>
+        </p>
+        <div>
+            <p>
+                <label for="date">Date: </label>
+                    <input type="date" id="date" name="date" class="date" value="2024-07-23" required>
+            </p>
+        </div>
+        <div>
+            <p>
+                <label for="datetime-local">Date: </label>
+                    <input type="datetime-local" id="datetime-local" name="datetime-local" class="datetime-local" value="2024-07-23T19:55" required>
+            </p>
+        </div>
+        <p>
+            <button type="submit">Submit</button>
+            <button type="reset">reset</button>
+        </p>
+        <div>
+            <p>
+                <label for="time">Time: </label>
+                    <input type="time" id="time" name="time" class="time" value="19:57:23" required>
+            </p>
+        </div>
+        <div>
+            <p>
+                <label for="color">Color: </label>
+                    <input type="color" id="color" name="color" class="color" value="#000099" required>
+                    <!-- https://www.w3schools.com/colors/colors_picker.asp -->
+            </p>
+        </div>
+        <div>
+            <p>
+                <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" class="email" placeholder="Digit your e-mail">
+            </p>
+        </div>
+        <div>
+            <p>
+                <label for="file">Put your picture: </label>
+                    <input type="file" id="file" name="file" class="file" required accept=".png,.svg,images/*" multiple>
+            </p>
+        </div>
+        <div>
+            <p>
+                <label for="number" >Number: </label>
+                    <input type="number" id="number" name="number" class="number" placeholder="Digit a number"
+                    min="10" max="50" step="5">
+            </p>
+        </div>
+        <div>
+            <p>
+                <label for="password" >Password: </label>
+                    <input type="password" id="password" name="password" class="password" placeholder="Digit your password">
+            </p>
+        </div>
+        <div>
+            <p>
+                <label for="range" >Range: </label>
+                    <input type="range" id="range" name="range" class="range" 
+                    min="10" max="50" step="5">
+            </p>
+        </div>
+        <div>
+            <p>
+                <label for="url" >URL: </label>
+                    <input type="url" id="url" name="url" class="url" placeholder="Digit an URL">
+            </p>
+        </div>
+        <div>
+            <p>
+                <label for="search" >Search: </label>
+                    <input type="search" id="search" name="search" class="url" placeholder="Search">
+            </p>
+        </div>
+        <div>
+            <p>
+                <label for="select">Choose an option:</label>
+                <select name="select" id="select" multiple>
+                    <optgroup label="test" >
+                        <option value="1" label="escolha 1"><option>
+                        <option value="2" label="escolha 2" selected><option>
+                        <option value="3" label="escolha 3" disabled><option>
+                        <option value="4" label="escolha 4" ><option>
+                    </optgroup>
+                </select>
+            </p>
+        </div>
+        <div>
+            <p>
+                <label for="textarea">Textarea</label>
+                <textarea name="textarea" id="textarea" rows="8" cols="30" placeholder="example"></textarea>
+            </p>
+        </div>
+    </form>
+</body>
+</html>
