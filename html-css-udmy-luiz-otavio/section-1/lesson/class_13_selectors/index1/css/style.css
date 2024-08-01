@@ -1,0 +1,47 @@
+/* Selector 'all' */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1.1em;
+}
+
+/* tag selection */
+p, h1{
+    color: red;
+}
+
+/* selection of offspring */
+
+body div section p,
+body div section h1 {
+    color: blue;
+}
+
+.paragraph {
+    color: purple;
+}
+
+.section p {
+    color: green;
+}
+
+.section .p {
+    color: yellow;
+}
+
+.section h2.heading {
+    color: aqua;
+}
+
+.dad.sun {
+    color: brown;
+}
+
+#paragraph {
+    color: orange;
+}
+

@@ -1,0 +1,48 @@
+/* 
+-1º !important
+ 0º style
+ 1º id -> >= 100 points 
+ 2º classes, pseudo-classes, attributes ->  >= 10
+ 3º pseudo-elements e elements -> >=1
+
+The last statement always prevails when the degree of specificity is the same
+
+*/
+
+p {
+    background-color: lightgreen;
+}
+
+.class {
+    background-color: green;
+}
+/* 10 points */
+
+#id {
+    background-color: darkgreen;
+}
+/* 100 points */
+
+#id.class {
+    background-color: darkgoldenrod;
+}
+/* 110 points */
+
+p#id.class {
+    background-color: yellow;
+}
+/* 111 points */
+
+body p#id.class {
+    background-color: rgb(255, 255, 159);
+}
+/* 112 points */
+
+#body p#id.class {
+    background-color: lightsalmon;
+}
+/* 211 points */
+
+#body p#id.class {
+    background-color: lightcoral !important;
+}

@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid {  
+    padding: 15px;
+}
+
+.grid .col {
+    /* display: inline-block; */
+    width: 33.33%;
+    height: 300px;
+    /* margin: 25px; */
+    float: left;
+    padding: 15px;
+}
+
+.grid .col-content {
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; name */
+    /* background-color: #00F; #HExadecima */
+    /* background-color: rgb(0, 0, 255); rgb -> red, green, blue */
+    background-color: rgba(00, 00, 255, 0.5); /* #HExadecima */
+    background-color: hsla(360, 100%, 0%, 0.5); /* #HExadecima */
+
+
+
+}
+
+/* p {
+    clear: left;
+    clear: right;
+    clear: both;
+} */

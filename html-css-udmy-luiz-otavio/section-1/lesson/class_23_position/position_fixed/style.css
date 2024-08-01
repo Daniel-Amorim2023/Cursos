@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* .dad {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding-bottom: 50px;
+
+
+} */
+
+.sun {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+
+.sun-1 {
+    background-color: blue;
+    padding: 15px;
+    /* position: relative; */
+    /* position: absolute; */
+    /* z-index: 2; */
+    top: 50px;
+    left: 50px;
+}
+
+.sun-1 ul {
+    overflow-y: auto;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 30px;
+    height: 100%;
+}
+
+.sun-1 ul li:nth-child(odd) {
+    background-color: rgb(198, 173, 173);
+}
+
+.sun-1 ul li:nth-child(even) {
+    background-color: rgb(189, 125, 125);
+}
+
+
+.sun-1 ul .sticky {
+    position: sticky;
+    /* background-color: gray; */
+    top: 0;
+}
+
+.sun-1 ul li {
+    padding: 5px;
+}
+
+.sun-2 {
+    position: fixed;
+    background-color: green;
+    /* float: left; */
+    z-index: 1;
+    top: 30%;
+    right: 50px;
+}
+
+.sun-2 .content-2 {
+    position: relative;
+    top: 150%;
+    font-size: 40px;
+    color: red;
+} 
+
+.sun-3 {
+    background-color: yellow;
+    position: relative;
+    z-index: -1;
+
+}
+
+.content {
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: purple;
+    background-color: lightyellow;
+    position: relative;
+    top: 150%;
+}

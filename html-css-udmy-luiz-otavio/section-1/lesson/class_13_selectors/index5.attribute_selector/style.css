@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+[my-attribute] {
+    color: red;
+}
+
+[my-attribute="a-value"] {
+    color: yellow;
+}
+
+/* Selects all attributes that start with something */
+[my-attribute^="v"] {
+    color: purple;
+}
+
+/* selects all attributes that finished with something */
+[my-attribute$="c"] {
+    color: green;
+}
+
+/* selects all attributes that have value */
+[my-attribute*="another"] {
+    color: blue;
+}
+
+[checked] {
+    width: 50px;
+    height: 50px;
+}
+

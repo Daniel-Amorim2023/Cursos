@@ -1,0 +1,4 @@
+p:not(.second-p) {
+    color: red;
+}
+

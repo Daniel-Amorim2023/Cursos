@@ -1,0 +1,17 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+div {
+    margin-left: 20px;
+    color: initial;
+}
+
+.dad > .sun {
+    color: red;
+}
+
+.dad > .sun > .sun {
+    color: purple;
+}

@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.dad {
+    padding: 10px;
+}
+
+
+.dad::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.sun {
+    height: 300px;
+    width: 33.33%;
+    padding: 10px;
+    float: left;
+}
+
+.content {
+    background-color: green;
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 391px) {
+    .sun {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) and (min-width: 391px) {
+    .sun {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sun {
+        width: 25%;
+    }
+}
+
+/*  https://www.w3schools.com/cssref/css3_pr_mediaquery.php */

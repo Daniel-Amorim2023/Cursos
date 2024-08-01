@@ -1,0 +1,54 @@
+
+
+h1 {
+    transition: all 2s linear;
+}
+
+h1:hover {
+    color: red;
+    cursor: pointer;
+}
+
+p a {
+    color: brown;
+}
+
+p a:link {
+    color: aqua;
+}
+
+p a:visited {
+    color: orange;
+}
+
+p a:hover {
+    color: lightcyan;
+    background-color: darkcyan;
+    text-decoration: none;
+}
+
+p a:active {
+    color: darkcyan;
+    background-color: lightcyan;
+    text-decoration: none;
+}
+
+input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: none;
+}
+
+input:checked{
+    width: 50px;
+    height: 50px;
+}
+
+input:checked + p {
+    border: 1px solid salmon;
+    background-color: cyan;
+}
+
+.dad .list li:first-child {
+    color: green;
+}

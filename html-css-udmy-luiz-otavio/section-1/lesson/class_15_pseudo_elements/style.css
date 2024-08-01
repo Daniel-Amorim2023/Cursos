@@ -1,0 +1,26 @@
+p::after {
+    content: ' -';
+    color: red;
+    margin-left: 20px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.text::first-letter {
+    font-size: 100px;
+    display: block;
+    float: left;
+}
+
+.text::selection {
+    background-color: black;
+    color: white;
+}
+
+input::placeholder {
+    color: darkcyan;
+    font-weight: bolder;
+    background-color: lightcyan;
+}

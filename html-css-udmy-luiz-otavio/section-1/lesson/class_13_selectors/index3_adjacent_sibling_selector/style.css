@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* adjacent sibling selector */
+.dad h1+p {
+    color: red;
+}
+
+.dad h1+p+p {
+    color: purple;
+}
+
+.dad p+h1 {
+    color: yellow;
+}

@@ -1,0 +1,18 @@
+div {
+    color: blue;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+div h1+p {
+    color: initial;
+}
+
+div p {
+    color: inherit;
+}
+
+/* https://developer.mozilla.org/pt-BR/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance -> mdn 
+
+https://www.sitepoint.com/css-inheritance-introduction/
+*/
