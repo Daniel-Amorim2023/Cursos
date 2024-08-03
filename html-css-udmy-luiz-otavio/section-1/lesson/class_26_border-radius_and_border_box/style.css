@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.84);
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 2px 3px rgb(0, 0, 74);
+}
+
+.menu ul {
+    list-style: none;
+    display: block; 
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.menu ul li {
+    float: left;
+}
+
+.menu ul li a {
+    display: block;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    transition: all 400ms ease-in-out;
+}
+
+.menu ul li a:hover {
+   background-color: #333;
+   cursor: pointer;
+}
+
+.grid {
+    padding: 10px 10px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+.grid::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.sun {
+    float: left;
+    width: 25%;
+    height: 300px;
+    padding: 10px;
+
+}
+
+.content {
+    background: blue;
+    border-radius: 5px;
+    box-shadow: inset -10px 10px 0px 1px red, -5px 5px 5px black;
+    height: 100%;
+    width: 100%;
+}
+
+.full-page {
+    min-height: 100vh;  
+    padding-top: 75px;
+    background-color: aquamarine;
+    border-top: 10px solid #3333336b;
+}
+
+.content-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+    text-align: justify;
+}
+
+.content-page h1 {
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.content-page p {
+    text-indent: 5%;
+
+}
+
+@media (max-width: 400px) {
+    .sun {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) and (min-width: 400px) {
+    .sun {
+        width: 50%;
+    }
+}
+
+@media (max-width: 800px) and (min-width: 600px) {
+    .sun {
+        width: 33.33%;
+    }
+}

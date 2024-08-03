@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif; 
+}
+
+header {
+    background-color: blue;
+    height: 100vh;
+}
+
+nav {
+    height: 8vh;
+    box-shadow: 1px 1px 5px rgba(0, 94, 94, 0.779);
+    border-bottom: 3px solid rgb(0, 202, 202);
+    padding-left: 10px;
+    background-color: aqua;
+    position: fixed;
+    width: 100vw;
+    
+}
+
+nav a {
+    display: block;
+    float: left;
+    background-image: linear-gradient(to top, rgb(75, 75, 252), blue);
+    color: aqua;
+    box-shadow: 1px 1px 2px rgba(0, 94, 94, 0.779);
+    border-radius: 3px;
+    width: 10vw;
+    margin-top: 6vh;
+    margin-right: 5px;
+    padding: 3px 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center; 
+    /* transition: all 50ms ease-in-out; */
+}
+
+nav a:hover {
+    background: rgba(0, 0, 0, 0.779);
+    cursor: pointer;
+}
+
+.part {
+    height: 100vh;
+}
+
+.part:nth-child(odd) {
+    background-color: gray;
+}
+
+footer {
+    background-color: aquamarine;
+    height: 50vh;
+}

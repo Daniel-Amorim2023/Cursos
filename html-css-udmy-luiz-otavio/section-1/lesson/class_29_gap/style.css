@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 24px;
+}
+
+.grid {
+    display: grid;
+    /*grid-template-columns: 200px 1fr 2fr;  fr is a fragment */
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* row-gap: 10px; */
+    /* column-gap: 10px; */
+    gap: 10px 20px;
+}
+
+.grid div {
+    background-color: cadetblue;
+    min-height: 50px;
+}
+
+
+/*  https://caniuse.com/?search=gap */
