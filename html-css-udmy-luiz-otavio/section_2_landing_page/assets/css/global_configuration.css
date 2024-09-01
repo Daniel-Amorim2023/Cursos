@@ -1,0 +1,80 @@
+/* ---------  global document configuration  -----------  */
+
+:root {
+    --primary-color: #0A1128;
+    --secondary-color: #787838;
+    --tertiary-color: #FF5E05;
+    --quarternary-color: #FFF;
+    --border: #DDDDDD;
+    --gap: 3rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 2rem;
+    font-family: "Open Sans", sans-serif;
+    color: var(--primary-color);
+}
+
+/* -----------  global tag configuration  -----------  */
+
+h1, h2, h3, h4 {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+h3 {
+    font-size: 4rem;
+}
+
+h4 {
+    font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+
+/* ---------  global classes configuration  ---------  */
+
+
+.main-bg {
+    background-image: url('../imagens/background-header.SVG');
+    background-size: cover;
+    background-position: center center;
+    color: var(--quarternary-color);
+}
+
+.second-bg {
+    background-color: var(--quarternary-color);
+}
+
+.section-content {
+    max-width: 120rem;
+    margin: auto;
+    padding: var(--gap);
+}
+
+.section {
+    min-height: 100vh;
+}

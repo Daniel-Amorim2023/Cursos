@@ -1,0 +1,88 @@
+/* 
+    Origin site: https://codepen.io/luizomf/full/KKNwMeG
+
+    check accessibility site: https://achecks.org/achecker/
+
+    Check html document: https://validator.w3.org/nu/#textarea
+
+    font-family: "Open Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
+*/
+
+
+/* -----------------  Menu  ---------------  */
+.menu {
+    position: fixed;
+    width: 100%;
+    border-bottom: 0.2rem solid var(--border);
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.menu h1 {
+    font-size: 2.3rem;
+}
+
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.menu ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 1.3rem;
+    left: 50%;
+    width: 0;
+    height: 0.3rem;
+    transition: all 300ms ease-in-out;
+    background-color: var(--tertiary-color);
+
+}
+
+.menu ul li a:hover::after {
+    width: 65%;
+    left: 20%;
+}
+
+.menu-spacing {
+    min-height: 6.15rem;
+}
+/* -----------------  section-main  ---------------  */
+
+.section-main {
+    position: relative;
+    top: 6.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--border);
+    height: 100vh;
+}
+
+.text-content-main {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    /* font-size: 50%; */
+
+}
+
+.text-content-main h2 {
+    margin-bottom: 6rem;
+    font-size: 4.5rem;
+}
